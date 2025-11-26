@@ -1,0 +1,4 @@
+packages_for_lambda
+.venv/Lib
+GIT_TEST
+data

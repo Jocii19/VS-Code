@@ -1,0 +1,5 @@
+.venv/Lib/site-packages/decorator.py
+.venv/Lib/site-packages/ipykernel_launcher.py
+.venv/Lib/site-packages/ipython_pygments_lexers.py
+.venv/Lib/site-packages/jupyter.py
+.venv/Lib/site-packages/nest_asyncio.py

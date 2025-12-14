@@ -2,3 +2,4 @@
 data/master_data
 packages_for_lambda
 GIT_TEST
+.env

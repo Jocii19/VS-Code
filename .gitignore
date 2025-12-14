@@ -1,5 +1,4 @@
 .venv
-data/master_data
+data
 packages_for_lambda
-GIT_TEST
 .env

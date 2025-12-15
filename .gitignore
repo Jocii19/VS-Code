@@ -2,5 +2,6 @@
 packages_for_lambda
 .env
 pandas-layer
-data
+data/jason_scraping
+data/master_data
 .venv

@@ -5,6 +5,8 @@
 This project presents an exploratory data analysis (EDA) and visualization of taxi service data.  
 The goal is to uncover patterns related to taxi companies, temporal trends, and customer payment behavior through clear and informative visualizations.
 
+During the implementation of this project, **Amazon Web Services (AWS) was used to support data storage, processing, and analysis**, demonstrating a cloud-based and industry-relevant workflow.
+
 The project demonstrates skills in:
 - Data exploration and preprocessing
 - Visual storytelling
@@ -85,16 +87,26 @@ This chart displays the distribution of payment types, providing insight into cu
 
 ---
 
+## ☁️ Cloud Infrastructure (AWS)
+
+The following AWS services were utilized during this project:
+
+- **Amazon S3** – data storage and access
+- **Amazon EC2 / AWS cloud environment** – execution of data processing and analysis workflows
+- **AWS-based workflow** – scalable, reproducible analytical environment
+
+This cloud-based approach ensures scalability, reliability, and alignment with real-world data engineering practices.
+
+---
+
 ## 🛠 Tools & Technologies
 
 - **Python**
 - **Pandas** – data manipulation and analysis
 - **Matplotlib** – data visualization
 - **Jupyter Notebook** – exploratory analysis
+- **Amazon Web Services (AWS)** – cloud-based data infrastructure
 - **Git & GitHub** – version control and project presentation
-
----
-
 
 ---
 

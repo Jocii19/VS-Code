@@ -1,126 +1,115 @@
-# Taxi & Weather ETL Pipeline 🚕
+# 🚕 Taxi Data Analysis & Visualization 
 
+## Overview
 
+This project presents an exploratory data analysis (EDA) and visualization of taxi service data.  
+The goal is to uncover patterns related to taxi companies, temporal trends, and customer payment behavior through clear and informative visualizations.
 
+The project demonstrates skills in:
+- Data exploration and preprocessing
+- Visual storytelling
+- Insight-driven analysis
+- Communicating results in a professional, portfolio-ready format
 
+---
 
-## Project Overview 📌
+## 📌 Key Objectives
 
-This repository contains an ETL (Extract – Transform – Load) pipeline implemented in a Jupyter Notebook. The project processes taxi trip data and weather data, performs data cleaning and transformation, builds dimension tables, and prepares the data for analytical or database loading purposes.
+- Identify the most active taxi companies
+- Analyze ride distribution across months and years
+- Examine customer payment preferences
+- Provide actionable insights based on observed trends
 
-The main goal is to demonstrate a clean data transformation & loading workflow using Python and pandas.
+---
 
+## 📊 Visual Insights
 
+### Taxi Companies Distribution
 
+This chart shows taxi companies ranked by frequency, highlighting market concentration and dominant service providers.
 
+<img width="746" height="448" alt="taxi_companies" src="https://github.com/user-attachments/assets/d3969110-61b5-401a-a945-377057839a26" />
 
 
+---
 
-## Data Description 🗂️
+### Top 10 Taxi Companies
 
+A focused view of the ten most frequently appearing taxi companies, useful for operational and competitive analysis.
 
-### Taxi Data 🚕
+<img width="721" height="448" alt="taxi_companies_first_10" src="https://github.com/user-attachments/assets/0fec0da4-56a8-46e2-a68d-fa74ff3f3cf8" />
 
-The taxi dataset is transformed into a star-schema–like structure:
 
-° Fact table: taxi trips
+---
 
-° Dimension tables:
+### Monthly Ride Distribution
 
-      ° Company dimension
+This visualization reveals seasonal patterns and potential demand fluctuations throughout the year.
 
-      ° Payment type dimension
+<img width="563" height="448" alt="Date distrib" src="https://github.com/user-attachments/assets/fa8fe914-7fa1-4974-842d-a6760e982584" />
 
-Each dimension is assigned a unique identifier, which is referenced from the fact table.
 
+---
 
-### Weather Data 🌦️
+### Yearly Ride Distribution
 
-Weather data is transformed separately to:
+The yearly distribution illustrates data coverage and long-term stability in taxi activity.
 
-° standardize formats,
+<img width="563" height="448" alt="Date distrib_year" src="https://github.com/user-attachments/assets/d4d0b10e-306d-4301-b412-cfe6d07a15df" />
 
-° align timestamps with taxi trips,
+---
 
-° enable analytical joins and aggregations.
+### Payment Method Analysis
 
+This chart displays the distribution of payment types, providing insight into customer payment preferences and potential system optimization opportunities.
 
+- Mobile
+- Credit Card
+- Prepaid Card
+- Cash
+- Unknown
+- No Charge
+- Dispute
 
-## Tech Stack 🛠️
+<img width="548" height="448" alt="payment_types" src="https://github.com/user-attachments/assets/2643493b-36d6-43e7-838e-eee3c718d6e7" />
 
-° Python 3
 
-° Jupyter Notebook
+---
 
-° pandas
+## 🔍 Key Findings
 
-° requests
+- A small number of taxi companies account for a large portion of recorded trips
+- Ride activity is relatively evenly distributed across months, with minor seasonal variation
+- Yearly data distribution is consistent, suggesting stable data collection
+- Cash and card-based payments dominate, while mobile and disputed payments are less frequent
 
-° python-dateutil
+---
 
-```python
-📁 Project Structure
-├── 07_transform_load.ipynb   # Transform & Load ETL notebook
-└── README.md                # Project documentation
-```
+## 🛠 Tools & Technologies
 
+- **Python**
+- **Pandas** – data manipulation and analysis
+- **Matplotlib** – data visualization
+- **Jupyter Notebook** – exploratory analysis
+- **Git & GitHub** – version control and project presentation
 
+---
 
-## ETL Workflow 🔄
 
-1.Environment setup and library imports
+---
 
-2.Data ingestion
+## 🚀 Potential Enhancements
 
-3.Data cleaning and preprocessing
+- Add interactive dashboards (Plotly / Power BI / Tableau)
+- Perform time series forecasting for ride demand
+- Segment analysis by company or payment type
+- Apply anomaly detection for unusual activity patterns
+- Integrate external data sources (weather, events)
 
-4.Dimension table creation (Company, Payment)
+---
 
-5.Weather data transformation
+## 📄 License
 
-6.Data preparation for loading
+This project is for educational and portfolio purposes.
 
 
-
-## How to Run ▶️
-Prerequisites
-
-° Python 3.x
-
-° Jupyter Notebook
-
-Installation
-```python
-pip install pandas requests python-dateutil
-```
-Execution
-```python
-jupyter notebook 07_transform_load.ipynb
-```
-
-Run all cells sequentially.
-
-
-## Output 📤
-
-After execution, the notebook produces:
-
-° normalized dimension tables,
-
-° clean and structured fact data,
-
-° datasets ready for database loading or BI analysis.
-
-
-
-## Notes 📌
-
-° This project is intended for educational and demonstration purposes
-
-° Easily extendable with additional dimensions or data sources
-
-
-
- ## License 📄
-
-This project is available for free use for educational and non-commercial purposes.
